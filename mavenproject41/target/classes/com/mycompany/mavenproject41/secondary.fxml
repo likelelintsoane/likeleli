@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mavenproject41.SecondaryController">
+   <children>
+      <HBox layoutX="264.0" layoutY="50.0" prefHeight="400.0" prefWidth="335.0" style="-fx-background-color: green;">
+         <children>
+            <TextField fx:id="first" prefHeight="400.0" prefWidth="114.0" />
+            <TextField fx:id="second" prefHeight="400.0" prefWidth="114.0" />
+            <TextField fx:id="third" prefHeight="400.0" prefWidth="114.0" />
+         </children>
+      </HBox>
+      <VBox layoutX="13.0" layoutY="55.0" prefHeight="298.0" prefWidth="171.0">
+         <children>
+            <RadioButton fx:id="italy" mnemonicParsing="false" onAction="#italyB" text="ITALY">
+               <toggleGroup>
+                  <ToggleGroup fx:id="box" />
+               </toggleGroup>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="ireland" mnemonicParsing="false" onAction="#irelandB" text="IRELAND" toggleGroup="$box">
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="france" mnemonicParsing="false" onAction="#franceB" text="FRANCE" toggleGroup="$box">
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="chad" mnemonicParsing="false" onAction="#chadA" text="CHAD" toggleGroup="$box">
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="mexico" mnemonicParsing="false" onAction="#mexicoB" text="MEXICO" toggleGroup="$box">
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="clear" mnemonicParsing="false" onAction="#clearB" text="CLEAR" textFill="#861010" toggleGroup="$box">
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </VBox>
+      <Text fx:id="names" layoutX="14.0" layoutY="434.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOME" wrappingWidth="211.0">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Text>
+      <Text layoutX="285.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COUNTRY FLAGS" wrappingWidth="264.9375">
+         <font>
+            <Font name="Microsoft Himalaya" size="47.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="0.6303317535545023" endY="1.0" startX="0.6492890995260663" startY="0.4312796208530805">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.1814449280500412" green="0.0903996080160141" blue="0.6973684430122375" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <RadioButton fx:id="exit" layoutX="178.0" layoutY="402.0" mnemonicParsing="false" onAction="#exitB" prefHeight="44.0" prefWidth="82.0" text="EXIT" toggleGroup="$box">
+         <font>
+            <Font name="Symbol" size="18.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>
